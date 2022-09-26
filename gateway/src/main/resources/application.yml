@@ -40,18 +40,18 @@ spring:
       client:
         provider:
           keycloak:
-            issuer-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}
+            issuer-uri: https://9090-imhawool-labshopmonolit-8i97vy3qeep.ws-us67.gitpod.io/realms/master
             user-name-attribute: preferred_username
         registration:
           keycloak:
-            client-id: "<client-id>"
-            client-secret: 
-            redirect-uri: "gateway-path/login/oauth2/code/client-name"
+            client-id: 12stmall
+            client-secret: wlglxJ1AitaLUEFyggx0734CCsbwC4Ji
+            redirect-uri: https://8088-imhawool-labshopmonolit-8i97vy3qeep.ws-us67.gitpod.io/login/oauth2/code/12stmall
             authorization-grant-type: authorization_code
             scope: openid
       resourceserver:
         jwt:
-          jwk-set-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/protocol/openid-connect/certs
+          jwk-set-uri: https://9090-imhawool-labshopmonolit-8i97vy3qeep.ws-us67.gitpod.io/realms/master/protocol/openid-connect/certs
 
 ---
 

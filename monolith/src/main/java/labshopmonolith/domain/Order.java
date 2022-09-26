@@ -31,9 +31,9 @@ public class Order {
 
         labshopmonolith.external.DecreaseStockCommand decreaseStockCommand = new labshopmonolith.external.DecreaseStockCommand();
         // mappings goes here
-        MonolithApplication.applicationContext
-            .getBean(labshopmonolith.external.InventoryService.class)
-            .decreaseStock(/* get???(), */decreaseStockCommand);
+        // MonolithApplication.applicationContext
+        //     .getBean(labshopmonolith.external.InventoryService.class)
+        //     .decreaseStock(/* get???(), */decreaseStockCommand);
 
         OrderPlaced orderPlaced = new OrderPlaced(this);
         orderPlaced.publishAfterCommit();
